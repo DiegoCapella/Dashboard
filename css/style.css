@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+#home-body{
+    background-color: #f7f7f7;
+}
+
+/* IMAGEM  PARALAX TOP HOME*/
+.header-site{
+    background-image: url(../img/home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding-top: 240px;
+    padding-bottom: 100px;
+    height: 100%;
+
+}
+
+/* LINKS BARRA DE NAVEGAÇÃO */
+
+.logo{
+    margin: 0;
+    padding: 0;
+    width: 280px;
+    height: 70px;
+
+}
+
+.links-navegacao{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 18px;
+}
+ /* Underline */
+.text-links:hover{
+    text-decoration: underline;
+}
+
+/* SOMBREAMENTO ABAIXO DA BARRA DE NAVEGAÇÃO */
+.box-shadow{
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.05),
+                0 8px 10px 0 rgba(0,0,0,.05);
+}
+
+/* FONTE DA IMAGEM TOP(CLIAGES) */
+.font-name{
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: white;
+
+}
+
+/* BOTÃO AGENDAR */
+.btn-agendar{
+    background-color:  rgba(255, 255, 255, 0.2); 
+    border: 3px solid white;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+/* Efeito Hover */
+.btn-agendar:hover{
+    background: white;
+    color: #428bca;
+    
+}
+
+/* RODAPÉ */
+footer{
+    background-color: #CFDDF3    ;
+}
+
+.text-rodape{
+    color: #428bca;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.text-rodape h2{
+    color: black;
+}
+
+
+/* PÁGINA DE LOGIN*/
+
+#background-login{
+    background-image: url(../img/background_login.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.card-page-login{
+    padding-top: 50px;
+    width: auto;
+    margin: 0 auto;
+}
+
+/* Class - Imagem aplicada ao topo do formulário
+    página de Login e Agendamento */
+.card-image-topo{
+    margin: 0 auto; 
+    
+}
+
+/* Fim */
+
+
+.imagem-login{
+    width: 400px;
+    height: 200px;
+}
+
+.btn-cancelar{
+    border: none;
+
+}
+
+
+/* PÁGINA DE AGENDAMENTO */
+
+
+#background-agendar { 
+    background-image: url('../img/background_agendamento.png');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.card-agendar {
+    padding-top: 50px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.imagem-agendar{
+    width: 400px;
+    height: 200px;
+}
+.font-select{
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}

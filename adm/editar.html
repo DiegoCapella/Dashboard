@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Administrativo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
+
+</head>
+
+<body>
+
+    <!-- Barra Navegação -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <a class="sidebar-toggle text-light mr-3"><span class="navbar-toggler-icon"></span></a>
+        <a class="navbar-brand" href="#">DClin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    </nav><!-- Fim Barra Navegação -->
+
+    <!-- Menu Lateral -->
+    <div class="d-flex">
+        <nav class="sidebar">
+            <ul class="list-unstyled">
+
+                <li>
+                    <a href="dashboard.html">Solicitações de Consulta</a>
+                </li>
+
+                <li>
+                    <a href="#agendamento" data-toggle="collapse">Agendamentos</a>
+                    <ul class="list-unstyled collapse" id="agendamento">
+                        <li>
+                            <a href="enferm.html">Enfermagem</a>
+                        </li>
+                        <li>
+                            <a href="#">Ed. Física</a>
+                        </li>
+                        <li>
+                            <a href="#">Farmácia</a>
+                        </li>
+                        <li>
+                            <a href="#">Fisioterapia</a>
+                        </li>
+                        <li>
+                            <a href="#">Nutrição</a>
+                        </li>
+                        <li>
+                            <a href="#">Odontologia</a>
+                        </li>
+                        <li>
+                            <a href="#">Psicologia</a>
+                        </li>
+                        <li>
+                            <a href="#">Serviço Social</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#estoque" data-toggle="collapse"> Estoque</a>
+                    <ul class="list-unstyled collapse" id="estoque">
+                        <li>
+                            <a href="#"> Cadastrar Produto</a>
+                        </li>
+                        <li>
+                            <a href="#"> Saída de Produto</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#usuario" data-toggle="collapse"> Usuário</a>
+                    <ul class="list-unstyled collapse" id="usuario">
+                        <li>
+                            <a href="#l"> Usuários</a>
+                        </li>
+                        <li>
+                            <a href="#"> Nível de Acesso</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Emprestimos</a>
+                </li>
+                <li>
+                    <a href="#">Relatórios</a>
+                </li>
+                <li>
+                    <a href="../login.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="content p-1">
+            <div class="list-group-item">
+                <div class="d-flex">
+                    <div class="mr-auto p-2">
+                        <h2 class="display-4 titulo">Editar Usuário</h2>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="nome"> Nome</label>
+                            <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome Completo">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="areaInt">Área de Interesse</label>
+                            <input type="email" class="form-control" name="areaInt" id="areaInt" placeholder="Área de Interesse aqui">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" class="form-control" name="endereco" id="endereco" placeholder="Rua A...">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="numero">Número</label>
+                            <input type="text" class="form-control" name="numero" id="numero" placeholder="123">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="complemento">Complemento</label>
+                            <input type="text" class="form-control" name="complemento" id="complemento" placeholder="Casa, Apartamento">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group col-md-5">
+                            <label for="cidade">Cidade</label>
+                            <select class="form-control" name="cidade" id="cidade">
+                                <option selected>Selecione</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="uf">UF</label>
+                            <select class="form-control">
+                                <option>BA</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="cep">CEP</label>
+                            <input type="text" class="form-control" name="cep" id="cep" placeholder="12345-000">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" class="form-control" name="telefone" id="telefone" placeholder="75 99999-9999">
+                        </div>
+
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="dataCons">Data da Conculta</label>
+                            <input type="datetime-local">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="dataCons">Data da Revisão</label>
+                            <input type="datetime-local">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="acolhimento">Acolhimento</label>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="acolhimento1" name="acolhimento" class="custom-control-input">
+                                <label class="custom-control-label" for="acolhimento1">Feito</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="acolhimento2" name="acolhimento" class="custom-control-input">
+                                <label class="custom-control-label" for="acolhimento2">Não Feito</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="dataCons">Triagem</label>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="triagem1" name="triagem" class="custom-control-input">
+                                <label class="custom-control-label" for="triagem1">Feito</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="triagem2" name="triagem" class="custom-control-input">
+                                <label class="custom-control-label" for="triagem2">Não Feito</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-success">Salvar</button>
+                    <a href="dashboard.html" class="btn btn-warning">Cancelar</a>
+
+                </form>
+
+            </div>
+        </div>
+    </div><!-- Fim Menu Lateral -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="apagarRegistro" tabindex="-1" role="dialog" aria-labelledby="apagarRegistro" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Excluir Item</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Tem certeza que deseja excluir o item selecionado?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger">Apagar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+
+</html>

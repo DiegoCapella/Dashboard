@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Administrativo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
+
+</head>
+
+<body>
+
+    <!-- Barra Navegação -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <a class="sidebar-toggle text-light mr-3"><span class="navbar-toggler-icon"></span></a>
+        <a class="navbar-brand" href="#">DClin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav><!-- Fim Barra Navegação -->
+
+    <!-- Menu Lateral -->
+    <div class="d-flex">
+        <nav class="sidebar">
+            <ul class="list-unstyled">
+
+                <li>
+                    <a href="dashboard.html">Solicitações de Consulta</a>
+                </li>
+
+                <li>
+                    <a href="#agendamento" data-toggle="collapse">Agendamentos</a>
+                    <ul class="list-unstyled collapse" id="agendamento">
+                        <li>
+                            <a href="enferm.html">Enfermagem</a>
+                        </li>
+                        <li>
+                            <a href="#">Ed. Física</a>
+                        </li>
+                        <li>
+                            <a href="#">Farmácia</a>
+                        </li>
+                        <li>
+                            <a href="#">Fisioterapia</a>
+                        </li>
+                        <li>
+                            <a href="#">Nutrição</a>
+                        </li>
+                        <li>
+                            <a href="#">Odontologia</a>
+                        </li>
+                        <li>
+                            <a href="#">Psicologia</a>
+                        </li>
+                        <li>
+                            <a href="#">Serviço Social</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#estoque" data-toggle="collapse"> Estoque</a>
+                    <ul class="list-unstyled collapse" id="estoque">
+                        <li>
+                            <a href="#"> Cadastrar Produto</a>
+                        </li>
+                        <li>
+                            <a href="#"> Saída de Produto</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#usuario" data-toggle="collapse"> Usuário</a>
+                    <ul class="list-unstyled collapse" id="usuario">
+                        <li>
+                            <a href="#l"> Usuários</a>
+                        </li>
+                        <li>
+                            <a href="#"> Nível de Acesso</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Emprestimos</a>
+                </li>
+                <li>
+                    <a href="#">Relatórios</a>
+                </li>
+                <li>
+                    <a href="../login.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="content p-1">
+            <div class="list-group-item">
+                <div class="d-flex">
+                    <div class="mr-auto p-2">
+                        <h2 class="display-4 titulo">Usuário</h2>
+                    </div>
+
+                    <div class="p-2">
+                        <span class="d-none d-md-block">
+                            <a href="editar.html" class="btn btn-sm btn-outline-primary">Editar</a>
+                            <a href="apagar.html" class="btn btn-sm btn-outline-danger" data-toggle="modal" data-target="#apagarRegistro">Apagar</a>
+                        </span>
+                    </div>
+                
+                </div>
+
+                <hr>
+
+                <dl class="row">
+                    <dt class="col-sm-3">ID</dt>
+                    <dd class="col-sm-9">1</dd>
+
+                    <dt class="col-sm-3">Nome</dt>
+                    <dd class="col-sm-9">José Raimundo da Silva</dd>
+
+                    <dt class="col-sm-3">Telefone</dt>
+                    <dd class="col-sm-9">75 99999-9999</dd>
+
+                    <dt class="col-sm-3 text-truncate">Última Consulta</dt>
+                    <dd class="col-sm-9">31/10/2018 22:15:39</dd>
+                </dl>
+
+            </div>
+        </div>
+    </div><!-- Fim Menu Lateral -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="apagarRegistro" tabindex="-1" role="dialog" aria-labelledby="apagarRegistro" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Excluir Item</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Tem certeza que deseja excluir o item selecionado?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger">Apagar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+
+</html>
